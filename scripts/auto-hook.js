@@ -1,5 +1,5 @@
-// Item Piles Auto Hook - Automatically convert dead actors to item piles
-// Compatible with FoundryVTT v13 and DnD5e v5.0.4
+// Item Piles Auto Hook - Automatically convert dead NPCs to item piles
+// Compatible with FoundryVTT v13 and CY_BORG v4.0.2
 
 Hooks.once("init", () => {
   // Register settings for notification control
@@ -55,7 +55,8 @@ Hooks.once("ready", () => {
     if (actor.type !== "npc") return;
     
     // Check if HP was updated
-    const hpPath = "system.attributes.hp.value"; // Adjust for your system
+    const hpPath = "system.hitpoints.value"; // For CY_BORG, adjust if using a different system
+    
     if (!foundry.utils.hasProperty(updateData, hpPath)) return;
     
     const currentHP = foundry.utils.getProperty(actor, hpPath);

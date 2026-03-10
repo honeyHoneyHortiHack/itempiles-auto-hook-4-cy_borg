@@ -1,12 +1,14 @@
 {
   "id": "itempiles-auto-hook",
   "title": "Item Piles Auto Hook",
-  "description": "Automatically converts dead actors to item piles when HP drops to 0, and reverts them when revived.",
-  "version": "1.0.2",
+  "description": "Automatically converts dead NPCs to item piles when HP drops to 0, and reverts them when revived.",
+  "version": "1.0.0",
   "authors": [
     {
       "name": "BragginRites",
-      "discord": "Braggin1205#1205"
+      "discord": "Braggin1205#1205",
+      "name": "HoneyHoneyHortiHack",
+      "discord": "SpaceyYogurt"
     }
   ],
   "compatibility": {
@@ -17,11 +19,11 @@
   "relationships": {
     "systems": [
       {
-        "id": "dnd5e",
+        "id": "cy-borg",
         "type": "system",
         "compatibility": {
-          "minimum": "5.0.0",
-          "verified": "5.0.4"
+          "minimum": "4.0.0",
+          "verified": "4.0.2"
         }
       }
     ],
@@ -36,7 +38,7 @@
   "esmodules": [
     "scripts/auto-hook.js"
   ],
-  "url": "https://github.com/BragginRites/itempiles-auto-hook",
-  "manifest": "https://github.com/BragginRites/itempiles-auto-hook/releases/download/1.0.2/module.json",
-  "download": "https://github.com/BragginRites/itempiles-auto-hook/releases/download/1.0.2/itempiles-auto-hook.zip"
+  "url": "https://github.com/honeyHoneyHortiHack/itempiles-auto-hook-4-cy_borg",
+  "manifest": "https://github.com/honeyHoneyHortiHack/itempiles-auto-hook-4-cy_borg/releases/download/1.0.0/module.json",
+  "download": "https://github.com/honeyHoneyHortiHack/itempiles-auto-hook-4-cy_borg/releases/download/1.0.0/itempiles-auto-hook.zip"
 }
